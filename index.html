@@ -20,15 +20,7 @@
   <!-- End Amplitude JS SDK -->
 
   <script type="text/javascript">
-    amplitude.getInstance().logEvent('DEVELOPERS_SITE', null, callback_function);
-    var identify = new amplitude.Identify().set('key', 'value');
-    amplitude.getInstance().identify(identify, callback_function);
-    var callback_function = function(status, response) {
-      if (status === 200 && response === 'success') {
-        <p>Te tengo!</p>
-      }
-      window.location.replace('https://firepay-tech.github.io/amplitude.github.io/visited/');
-    };
+    amplitude.getInstance().logEvent('DEVELOPERS_SITE');
   </script>
 
   <body>
